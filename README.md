@@ -1,10 +1,11 @@
-[![Build Status](https://drone.io/github.com/pychess/pychess/status.png)](https://drone.io/github.com/pychess/pychess/latest)
+Joe Snider
+12/15
 
-PyChess - a free chess client for Linux
+This fork of pychess records precise timing data for alignment with other data streams.
 
-The mission of PyChess is to create a free, pleasant, pygtk chess game for the
-Linux desktop that does everything you require from an advanced chess client.
+Network capability is disabled.
 
+PyChess info
 Project homepage: http://pychess.org/  
 Download page: http://pychess.org/download/  
 Development page: https://github.com/pychess/pychess  
