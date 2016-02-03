@@ -124,7 +124,8 @@ class safeFile():
         try:
             self._openFile()
             #self.fil.write(("%20.19g "%(time.time())) + time.ctime().replace(' ', '_') + " " + self.subjid + " " + data + "\n")
-            self.fil.write(("%d%.12g "%(self.f.dwHighDateTime, float(self.f.dwLowDateTime)*1e-7)) + localTime + " " + self.subjid + " " + data + "\n")
+            #self.fil.write(("%d%.12g "%(self.f.dwHighDateTime, float(self.f.dwLowDateTime)*1e-7)) + localTime + " " + self.subjid + " " + data + "\n")
+            self.fil.write("%20.19g "%( (self.f.dwHighDateTime << 32 | self.f.dwLowDateTime)*1e-7) + localTime + " " + self.subjid + " " + data + "\n")
             self.fil.close()
         except IOError:
             return -1
